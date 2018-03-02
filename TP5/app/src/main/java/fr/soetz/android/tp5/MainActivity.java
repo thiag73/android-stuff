@@ -21,13 +21,15 @@ public class MainActivity extends AppCompatActivity {
 
         liste = (ListView)findViewById(R.id.liste);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1, objets);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this,
+                android.R.layout.simple_list_item_1, objets);
         liste.setAdapter(adapter);
 
         liste.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getApplicationContext(), objets[position], Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), objets[position],
+                        Toast.LENGTH_SHORT).show();
             }
         });
     }
