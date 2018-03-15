@@ -12,7 +12,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private ListView liste;
-    private String[] objets = {"Table", "Chaise", "Machine à Panini", "Frigo"};
+    private String[] objets = {"Table", "Chaise", "Machine à Panini", "Frigo", "Micro-Ondes", "Comptoir", "Caisse", "Évier", "Cumulus", "Panic Room", "Poubelle de tri", "Boîte à idées (ah nan en fait)"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
