@@ -34,7 +34,7 @@
             app:srcCompat="@mipmap/ic_launcher_round" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/prenom"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
@@ -48,7 +48,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textViewTitre" />
 
         <EditText
-            android:id="@+id/editTextNom"
+            android:id="@+id/nom"
             android:layout_width="0dp"
             android:layout_height="46dp"
             android:layout_marginEnd="8dp"
@@ -59,7 +59,7 @@
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toBottomOf="@+id/editText" />
+            app:layout_constraintTop_toBottomOf="@+id/prenom" />
 
         <RadioGroup
             android:id="@+id/radioGroup"
@@ -67,8 +67,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:orientation="horizontal"
-            app:layout_constraintStart_toStartOf="@+id/editTextNom"
-            app:layout_constraintTop_toBottomOf="@+id/editTextNom">
+            app:layout_constraintStart_toStartOf="@+id/nom"
+            app:layout_constraintTop_toBottomOf="@+id/nom">
 
             <RadioButton
                 android:id="@+id/radioButtonH"
@@ -86,7 +86,7 @@
         </RadioGroup>
 
         <EditText
-            android:id="@+id/editTextTel"
+            android:id="@+id/tel"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
@@ -94,11 +94,11 @@
             android:ems="10"
             android:inputType="phone"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/editTextNom"
+            app:layout_constraintStart_toStartOf="@+id/nom"
             app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
         <EditText
-            android:id="@+id/editTextMail"
+            android:id="@+id/mail"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
@@ -106,8 +106,8 @@
             android:ems="10"
             android:inputType="textEmailAddress"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/editTextTel"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTel" />
+            app:layout_constraintStart_toStartOf="@+id/tel"
+            app:layout_constraintTop_toBottomOf="@+id/tel" />
 
         <TextView
             android:id="@+id/textView4"
@@ -125,9 +125,9 @@
             android:layout_height="19dp"
             android:layout_marginEnd="8dp"
             android:text="Téléphone"
-            app:layout_constraintBottom_toBottomOf="@+id/editTextTel"
-            app:layout_constraintEnd_toStartOf="@+id/editTextTel"
-            app:layout_constraintTop_toTopOf="@+id/editTextTel" />
+            app:layout_constraintBottom_toBottomOf="@+id/tel"
+            app:layout_constraintEnd_toStartOf="@+id/tel"
+            app:layout_constraintTop_toTopOf="@+id/tel" />
 
         <TextView
             android:id="@+id/textView7"
@@ -135,20 +135,20 @@
             android:layout_height="19dp"
             android:layout_marginEnd="8dp"
             android:text="E-mail"
-            app:layout_constraintBottom_toBottomOf="@+id/editTextMail"
-            app:layout_constraintEnd_toStartOf="@+id/editTextMail"
-            app:layout_constraintTop_toTopOf="@+id/editTextMail" />
+            app:layout_constraintBottom_toBottomOf="@+id/mail"
+            app:layout_constraintEnd_toStartOf="@+id/mail"
+            app:layout_constraintTop_toTopOf="@+id/mail" />
 
         <EditText
-            android:id="@+id/editText5"
+            android:id="@+id/datenaissance"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:ems="10"
             android:inputType="date"
-            app:layout_constraintEnd_toEndOf="@+id/editTextMail"
-            app:layout_constraintStart_toStartOf="@+id/editTextMail"
-            app:layout_constraintTop_toBottomOf="@+id/editTextMail" />
+            app:layout_constraintEnd_toEndOf="@+id/mail"
+            app:layout_constraintStart_toStartOf="@+id/mail"
+            app:layout_constraintTop_toBottomOf="@+id/mail" />
 
         <TextView
             android:id="@+id/textView8"
@@ -158,20 +158,20 @@
             android:layout_marginStart="8dp"
             android:text="Date de naissance"
             android:textAlignment="textEnd"
-            app:layout_constraintBottom_toBottomOf="@+id/editText5"
-            app:layout_constraintEnd_toStartOf="@+id/editText5"
+            app:layout_constraintBottom_toBottomOf="@+id/datenaissance"
+            app:layout_constraintEnd_toStartOf="@+id/datenaissance"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/editText5" />
+            app:layout_constraintTop_toTopOf="@+id/datenaissance" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/enreg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_marginTop="8dp"
             android:text="Enregistrer"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText5" />
+            app:layout_constraintTop_toBottomOf="@+id/datenaissance" />
 
     </android.support.constraint.ConstraintLayout>
 

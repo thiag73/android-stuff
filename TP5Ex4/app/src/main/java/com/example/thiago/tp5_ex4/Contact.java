@@ -1,23 +1,29 @@
 package com.example.thiago.tp5_ex4;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  * Created by Thiago on 16/03/2018.
  */
 
-public class Contact {
+public class Contact implements Serializable {
     private char sexe;
     private String nom;
     private String prenom;
     private Date dateNaissance;
     private String tel;
     private String mail;
-    private int codePostal;
-    private String adresse;
     private String avatar;
 
-    public Contact() {
+    public Contact(String nom, String prenom, char sexe, Date dateNaissance, String tel, String mail, String avatar) {
+        this.nom = nom;
+        this.prenom = prenom;
+        this.sexe = sexe;
+        this.dateNaissance = dateNaissance;
+        this.tel = tel;
+        this.mail = mail;
+        this.avatar = avatar;
     }
 
     public char getSexe() {
@@ -71,27 +77,20 @@ public class Contact {
         this.mail = mail;
     }
 
-    public int getCodePostal() {
-        return codePostal;
-    }
-
-    public void setCodePostal(int codePostal) {
-        this.codePostal = codePostal;
-    }
-
-    public String getAdresse() {
-        return adresse;
-    }
-
-    public void setAdresse(String adresse) {
-        this.adresse = adresse;
-    }
-
     public String getAvatar() {
         return avatar;
     }
 
     public void setAvatar(String avatar) {
         this.avatar = avatar;
+    }
+
+    public String toString() {
+        String str = "";
+        str += prenom + " " + nom + " (" + sexe + ")\n";
+        str += dateNaissance + "\n";
+        str += tel + ", " + mail + "\n";
+        str += avatar;
+        return(str);
     }
 }

@@ -16,6 +16,9 @@
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:textAlignment="center" />
+        android:text="coucou c'est moi"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
 
 </LinearLayout>
